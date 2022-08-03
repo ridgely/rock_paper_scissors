@@ -36,5 +36,18 @@ function playRound(playerSelection, computerSelection) {
         return "You lose. Scissors loses to Rock :(";
       }
     }
+  } else {
+    console.log("You did not type a valid choice. Please try again");
+    game();
   }
 }
+
+function game() {
+  const playerSelection = prompt(
+    "Select rock, paper, scissors: "
+  ).toLowerCase();
+  const computerSelection = getComputerChoice();
+  console.log(playRound(playerSelection, computerSelection));
+}
+
+game();
