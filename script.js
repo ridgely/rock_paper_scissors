@@ -11,3 +11,4 @@ function getComputerChoice() {
   return choices[Math.floor(Math.random() * choices.length)];
 }
 // TODO: Compare USER and COMPUTER choices
+function playRound(playerSelection, computerSelection) {}
